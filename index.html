@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroConectado</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>🌱 AgroConectado</h1>
+    <p>O Desafio do Futuro</p>
+  </header>
+
+  <main>
+
+    <section class="tabuleiro">
+
+      <div class="hex lavoura">
+        🌾
+        <span>Lavoura</span>
+      </div>
+
+      <div class="hex pecuaria">
+        🐄
+        <span>Pecuária</span>
+      </div>
+
+      <div class="hex floresta">
+        🌳
+        <span>Floresta</span>
+      </div>
+
+      <div class="hex agua">
+        💧
+        <span>Nascente</span>
+      </div>
+
+      <div class="hex energia">
+        ☀️
+        <span>Energia</span>
+      </div>
+
+    </section>
+
+    <section class="painel">
+
+      <h2>📊 Fazenda</h2>
+
+      <div class="status">
+
+        <div class="card-status">
+          🌾 Produção
+          <h3 id="producao">60</h3>
+        </div>
+
+        <div class="card-status">
+          ♻️ Sustentabilidade
+          <h3 id="sustentabilidade">100</h3>
+        </div>
+
+        <div class="card-status">
+          💰 Recursos
+          <h3 id="recursos">350</h3>
+        </div>
+
+      </div>
+
+      <h2>🛠️ Tecnologias Verdes</h2>
+
+      <div class="botoes">
+
+        <button onclick="usarTecnologia('plantio')">
+          🌱 Plantio Direto
+        </button>
+
+        <button onclick="usarTecnologia('solar')">
+          ☀️ Energia Solar
+        </button>
+
+        <button onclick="usarTecnologia('drone')">
+          🚁 Drone Agrícola
+        </button>
+
+        <button onclick="pesquisarClima()">
+          🔎 Pesquisar Clima
+        </button>
+
+        <button onclick="eventoClimatico()">
+          🌦️ Próxima Safra
+        </button>
+
+      </div>
+
+    </section>
+
+    <section class="eventos">
+
+      <h2>📢 Eventos Climáticos</h2>
+
+      <div id="mensagem">
+        Bem-vindo ao AgroConectado 🌱
+      </div>
+
+    </section>
+
+  </main>
+
+</section>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lavoura</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🌾 Lavoura Sustentável</h1>
+</header>
+
+<main class="eventos">
+
+<h2>Importância da Lavoura</h2>
+
+<p>
+A lavoura é essencial para o agronegócio e para a alimentação da população.
+Ela produz alimentos, gera empregos e movimenta a economia.
+</p>
+
+<br>
+
+<h2>Métodos Sustentáveis</h2>
+
+<p>
+🌱 Plantio Direto<br><br>
+
+💧 Irrigação controlada<br><br>
+
+♻️ Rotação de culturas<br><br>
+
+🚜 Uso consciente do solo<br><br>
+
+🌿 Redução de agrotóxicos
+</p>
+
+<br>
+
+<a href="index.html">
+</a>
+
+</main>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pecuária</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🐄 Pecuária Sustentável</h1>
+</header>
+
+<main class="eventos">
+
+<h2>Cuidados com a Pecuária</h2>
+
+<p>
+A pecuária sustentável reduz impactos ambientais e melhora a produção.
+</p>
+
+<br>
+
+<h2>Métodos Sustentáveis</h2>
+
+<p>
+🌱 Pastagem rotacionada<br><br>
+
+💧 Economia de água<br><br>
+
+🌳 Integração lavoura-pecuária-floresta<br><br>
+
+♻️ Tratamento de resíduos animais<br><br>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroConectado</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>🌱 AgroConectado</h1>
+    <p>O Desafio do Futuro</p>
+  </header>
+
+  <main>
+
+    <section class="tabuleiro">
+
+      <div class="hex lavoura">
+        🌾
+        <span>Lavoura</span>
+      </div>
+
+      <div class="hex pecuaria">
+        🐄
+        <span>Pecuária</span>
+      </div>
+
+      <div class="hex floresta">
+        🌳
+        <span>Floresta</span>
+      </div>
+
+      <div class="hex agua">
+        💧
+        <span>Nascente</span>
+      </div>
+
+      <div class="hex energia">
+        ☀️
+        <span>Energia</span>
+      </div>
+
+    </section>
+
+    <section class="painel">
+
+      <h2>📊 Fazenda</h2>
+
+      <div class="status">
+
+        <div class="card-status">
+          🌾 Produção
+          <h3 id="producao">60</h3>
+        </div>
+
+        <div class="card-status">
+          ♻️ Sustentabilidade
+          <h3 id="sustentabilidade">100</h3>
+        </div>
+
+        <div class="card-status">
+          💰 Recursos
+          <h3 id="recursos">350</h3>
+        </div>
+
+      </div>
+
+      <h2>🛠️ Tecnologias Verdes</h2>
+
+      <div class="botoes">
+
+        <button onclick="usarTecnologia('plantio')">
+          🌱 Plantio Direto
+        </button>
+
+        <button onclick="usarTecnologia('solar')">
+          ☀️ Energia Solar
+        </button>
+
+        <button onclick="usarTecnologia('drone')">
+          🚁 Drone Agrícola
+        </button>
+
+        <button onclick="pesquisarClima()">
+          🔎 Pesquisar Clima
+        </button>
+
+        <button onclick="eventoClimatico()">
+          🌦️ Próxima Safra
+        </button>
+
+      </div>
+
+    </section>
+
+    <section class="eventos">
+
+      <h2>📢 Eventos Climáticos</h2>
+
+      <div id="mensagem">
+        Bem-vindo ao AgroConectado 🌱
+      </div>
+
+    </section>
+
+  </main>
+
+</section>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lavoura</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🌾 Lavoura Sustentável</h1>
+</header>
+
+<main class="eventos">
+
+<h2>Importância da Lavoura</h2>
+
+<p>
+A lavoura é essencial para o agronegócio e para a alimentação da população.
+Ela produz alimentos, gera empregos e movimenta a economia.
+</p>
+
+<br>
+
+<h2>Métodos Sustentáveis</h2>
+
+<p>
+🌱 Plantio Direto<br><br>
+
+💧 Irrigação controlada<br><br>
+
+♻️ Rotação de culturas<br><br>
+
+🚜 Uso consciente do solo<br><br>
+
+🌿 Redução de agrotóxicos
+</p>
+
+<br>
+
+<a href="index.html">
+</a>
+
+</main>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pecuária</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🐄 Pecuária Sustentável</h1>
+</header>
+
+<main class="eventos">
+
+<h2>Cuidados com a Pecuária</h2>
+
+<p>
+A pecuária sustentável reduz impactos ambientais e melhora a produção.
+</p>
+
+<br>
+
+<h2>Métodos Sustentáveis</h2>
+
+<p>
+🌱 Pastagem rotacionada<br><br>
+
+💧 Economia de água<br><br>
+
+🌳 Integração lavoura-pecuária-floresta<br><br>
+
+♻️ Tratamento de resíduos animais<br><br>
+
+☀️ Uso de energia solar
+</p>
+
+<br>
+
+<a href="index.html">
+</a>
+
+</main>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Floresta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🌳 Proteção das Florestas</h1>
+</header>
+
+<main class="eventos">
+
+<h2>Por que preservar?</h2>
+
+<p>
+As florestas produzem oxigênio, preservam os rios e ajudam no clima do planeta.
+O desmatamento causa aquecimento global e destrói habitats naturais.
+</p>
+
+<br>
+
+<h2>Métodos Sustentáveis</h2>
+
+<p>
+🌱 Reflorestamento<br><br>
+
+🚫 Combate ao desmatamento<br><br>
+
+♻️ Uso sustentável da madeira<br><br>
+
+🌳 Preservação da biodiversidade
+</p>
+
+<br>
+
+<a href="index.html">
+</a>
+
+</main>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Nascente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>💧 Proteção das Nascentes</h1>
+</header>
+
+<main class="eventos">
+
+<h2>Importância das Nascentes</h2>
+
+<p>
+As nascentes fornecem água limpa para rios, plantações e cidades.
+</p>
+
+<br>
+
+<h2>Práticas Sustentáveis</h2>
+
+<p>
+🌱 Preservar vegetação ao redor<br><br>
+
+🚫 Não jogar lixo<br><br>
+
+🚫 Não desmatar áreas próximas<br><br>
+
+💧 Evitar contaminação química
+</p>
+
+<br>
+
+<h2>Práticas Erradas</h2>
+
+<p>
+❌ Queimadas<br><br>
+
+❌ Poluição<br><br>
+
+❌ Uso excessivo de agrotóxicos
+</p>
+
+<br>
+
+<a href="index.html">
+</a>
+
+</main>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Energia Sustentável</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>☀️ Energia Sustentável</h1>
+</header>
+
+<main class="eventos">
+
+<h2>Importância</h2>
+
+<p>
+As energias sustentáveis reduzem a poluição e ajudam a preservar o planeta.
+</p>
+
+<br>
+
+<h2>Tipos de Energia Limpa</h2>
+
+<p>
+☀️ Energia Solar<br><br>
+
+💨 Energia Eólica<br><br>
+
+💧 Energia Hidrelétrica<br><br>
+
+🌱 Biomassa
+</p>
+
+<br>
+
+<h2>Benefícios</h2>
+
+<p>
+♻️ Menos poluição<br><br>
+
+🌎 Proteção ambiental<br><br>
+
+💰 Economia no futuro
+</p>
+
+<br>
+
+<a href="index.html">
+</a>
+
+</main>
+
+</body>
+</html>
+
+  <script src="java.js"></script>
+
+</body>
+
+<h2 id="titulo-lavoura">
+  🌾 Lavoura Sustentável
+</h2> 
+
+
+<div class="hex lavoura" onclick="irParaLavoura()">
+  🌾
+  <span>Lavoura</span>
+</div>
+}
+</html>
+☀️ Uso de energia solar
+</p>
+
+<br>
+
+<a href="index.html">
+</a>
+
+</main>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Floresta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🌳 Proteção das Florestas</h1>
+</header>
+
+<main class="eventos">
+
+<h2>Por que preservar?</h2>
+
+<p>
+As florestas produzem oxigênio, preservam os rios e ajudam no clima do planeta.
+O desmatamento causa aquecimento global e destrói habitats naturais.
+</p>
+
+<br>
+
+<h2>Métodos Sustentáveis</h2>
+
+<p>
+🌱 Reflorestamento<br><br>
+
+🚫 Combate ao desmatamento<br><br>
+
+♻️ Uso sustentável da madeira<br><br>
+
+🌳 Preservação da biodiversidade
+</p>
+
+<br>
+
+<a href="index.html">
+</a>
+
+</main>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Nascente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>💧 Proteção das Nascentes</h1>
+</header>
+
+<main class="eventos">
+
+<h2>Importância das Nascentes</h2>
+
+<p>
+As nascentes fornecem água limpa para rios, plantações e cidades.
+</p>
+
+<br>
+
+<h2>Práticas Sustentáveis</h2>
+
+<p>
+🌱 Preservar vegetação ao redor<br><br>
+
+🚫 Não jogar lixo<br><br>
+
+🚫 Não desmatar áreas próximas<br><br>
+
+💧 Evitar contaminação química
+</p>
+
+<br>
+
+<h2>Práticas Erradas</h2>
+
+<p>
+❌ Queimadas<br><br>
+
+❌ Poluição<br><br>
+
+❌ Uso excessivo de agrotóxicos
+</p>
+
+<br>
+
+<a href="index.html">
+</a>
+
+</main>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Energia Sustentável</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>☀️ Energia Sustentável</h1>
+</header>
+
+<main class="eventos">
+
+<h2>Importância</h2>
+
+<p>
+As energias sustentáveis reduzem a poluição e ajudam a preservar o planeta.
+</p>
+
+<br>
+
+<h2>Tipos de Energia Limpa</h2>
+
+<p>
+☀️ Energia Solar<br><br>
+
+💨 Energia Eólica<br><br>
+
+💧 Energia Hidrelétrica<br><br>
+
+🌱 Biomassa
+</p>
+
+<br>
+
+<h2>Benefícios</h2>
+
+<p>
+♻️ Menos poluição<br><br>
+
+🌎 Proteção ambiental<br><br>
+
+💰 Economia no futuro
+</p>
+
+<br>
+
+<a href="index.html">
+</a>
+
+</main>
+
+</body>
+</html>
+
+  <script src="java.js"></script>
+
+</body>
+
+<h2 id="titulo-lavoura">
+  🌾 Lavoura Sustentável
+</h2> 
+
+
+<div class="hex lavoura" onclick="irParaLavoura()">
+  🌾
+  <span>Lavoura</span>
+</div>
+}
+</html>
